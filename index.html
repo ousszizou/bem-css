@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.E.M</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>without bem</h1>
+    <div class="container-no-bem">
+      <div class="card-light">
+        <div>
+          <img src="https://picsum.photos/300" />
+        </div>
+        <div>
+          <h2>Light Card</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+            quisquam hic, alias assumenda temporibus atque vero doloremque
+            officia impedit nemo incidunt veniam deleniti, illo dolore officiis
+            neque veritatis dolorem laborum!
+          </p>
+        </div>
+      </div>
+      <div class="card-dark">
+        <div>
+          <img src="https://picsum.photos/300" />
+        </div>
+        <div>
+          <h2>Dark Card</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+            quisquam hic, alias assumenda temporibus atque vero doloremque
+            officia impedit nemo incidunt veniam deleniti, illo dolore officiis
+            neque veritatis dolorem laborum!
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1>with bem</h1>
+    <div class="container-bem">
+      <div class="card card--theme-light">
+        <div class="card__header">
+          <img src="https://picsum.photos/300" class="card__image" />
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">Light Card</h2>
+          <p class="card__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+            quisquam hic, alias assumenda temporibus atque vero doloremque
+            officia impedit nemo incidunt veniam deleniti, illo dolore officiis
+            neque veritatis dolorem laborum!
+          </p>
+        </div>
+      </div>
+      <div class="card card--theme-dark">
+        <div class="card__header">
+          <img src="https://picsum.photos/300" class="card__image" />
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">Dark Card</h2>
+          <p class="card__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+            quisquam hic, alias assumenda temporibus atque vero doloremque
+            officia impedit nemo incidunt veniam deleniti, illo dolore officiis
+            neque veritatis dolorem laborum!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

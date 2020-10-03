@@ -1,0 +1,157 @@
+/* 
+  * BEM ( Block, Element, Modifier ) methodology.
+  * Is a popular naming convention for classes in HTML and CSS.
+  * its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
+*/
+
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__price {}
+
+/* Modifier that changes the style of the block */
+.btn--dark {} 
+.btn--light {}
+.btn--active {}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  letter-spacing: 1rem;
+}
+
+/* NO BEM */
+.container-no-bem {
+  display: flex;
+  width: 60%;
+  margin: 0 auto 3rem;
+}
+
+.card-light {
+  margin: 2rem auto 0;
+  position: relative;
+  padding: 5px;
+  border-radius: 7px;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 2px 3px 28px rgb(226, 226, 226);
+}
+
+.card-light div img {
+  border-radius: 7px;
+  max-width: 100%;
+}
+
+.card-light div h2 {
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin: 2px 0 8px;
+}
+
+.card-light div p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-dark {
+  margin: 2rem auto 0;
+  position: relative;
+  padding: 5px;
+  border-radius: 7px;
+  max-width: 300px;
+  color: #fff;
+  background-color: #111;
+  box-shadow: 2px 3px 28px rgb(234 234 234);
+}
+
+.card-dark img {
+  border-radius: 7px;
+  max-width: 100%;
+}
+
+.card-dark h2 {
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin: 2px 0 8px;
+}
+
+.card-dark p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+
+
+/* BEM */
+.container-bem {
+  display: flex;
+  width: 60%;
+  margin: 0 auto 4rem;
+}
+
+.card {
+  margin: 2rem auto 0;
+  position: relative;
+  padding: 5px;
+  border-radius: 7px;
+  max-width: 300px;
+}
+
+.card__header .card__image {
+  border-radius: 7px;
+  max-width: 100%;
+}
+
+.card__body {
+  padding: 7px;
+}
+
+.card__body .card__title {
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin: 2px 0 8px;
+}
+
+.card__body .card__content {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* .card--light */
+.card--theme-light {
+  background-color: #fff;
+  box-shadow: 2px 3px 28px rgb(226, 226, 226);
+}
+
+/* .card--dark */
+.card--theme-dark {
+  color: #fff;
+  background-color: #111;
+  box-shadow: 2px 3px 28px rgb(234 234 234);
+}
+
